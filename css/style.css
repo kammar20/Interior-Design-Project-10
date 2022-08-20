@@ -1,0 +1,243 @@
+/* Font Family Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/****** Utility ******/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--white-color);
+  font-size: 62.5%;
+}
+
+:root {
+  --white-color: #ffffff;
+  --blue-color: #285776;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1700px;
+  margin: auto;
+  height: 100vh;
+}
+
+/******  ******/
+
+/****** ShowCase ******/
+.showcase {
+  background-image: url('../img/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom 25%;
+  height: 100%;
+  width: 100%;
+}
+/******  ******/
+
+/****** Navbar ******/
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 4rem;
+  padding-top: 4rem;
+}
+
+/* nav logo */
+.logo {
+  width: 12rem;
+}
+
+/* nav-menu */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--white-color);
+}
+
+/* nav-links */
+.nav-link {
+  display: inline-block;
+  font-size: 1.8rem;
+  margin: 0 4rem;
+}
+
+/* nav-link active */
+.active {
+  margin-left: 0;
+}
+
+/* call Us Container */
+.call-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* call logo */
+.call-us img {
+  width: 60px;
+}
+
+.call-us .call-details {
+  font-size: 1.6rem;
+  margin-left: 0.8rem;
+}
+/****** Navbar End ******/
+
+/****** Content ******/
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+  position: relative;
+  width: 100%;
+}
+
+/* tagline */
+.tag-line {
+  width: 40%;
+  margin-top: 6rem;
+}
+
+.tag-line h1 {
+  font-size: 6rem;
+  margin-bottom: 6rem;
+}
+
+.tag-line .btn {
+  display: inline-block;
+  border: 3px solid var(--white-color);
+  color: var(--white-color);
+  background-color: transparent;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 1.5rem 3rem;
+  border-radius: 3rem;
+  letter-spacing: 0.1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.tag-line .btn:hover {
+  background-color: var(--blue-color);
+  border: 2px solid var(--white-color);
+}
+
+/*** features Wrapper ***/
+.features-wrapper {
+  position: relative;
+  width: 727px;
+}
+
+/* common styling for both box */
+.features-wrapper .common {
+  width: 35%;
+  margin-bottom: 5rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+/* both box img */
+.features-wrapper .common img {
+  width: 90px;
+  background-color: var(--white-color);
+  padding: 1rem 3.1rem;
+  border-radius: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* both box text */
+.features-wrapper .common .text {
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+
+/* Single feature Creative Box */
+.feature-creative {
+  position: absolute;
+  right: 140px;
+  top: -5px;
+}
+
+/* line One container */
+.line-one {
+  position: absolute;
+  top: 128px;
+  right: 195px;
+}
+
+/* line for creative */
+.line-one .line {
+  position: absolute;
+  background-color: var(--white-color);
+  width: 1px;
+  height: 70px;
+}
+
+/* Circle for creative line */
+.line-one .circle {
+  width: 15px;
+  height: 15px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 70px;
+  left: -6px;
+}
+
+/* Single feature inovation Box */
+.feature-inovation {
+  position: relative;
+  right: -115px;
+  top: 265px;
+}
+
+/* line Two Container  */
+.line-two {
+  position: absolute;
+  bottom: -120px;
+  right: 358px;
+}
+
+/* line for inovation */
+.line-two .line {
+  position: absolute;
+  background-color: var(--white-color);
+  width: 80px;
+  height: 2px;
+}
+
+/* circle for inovation line */
+.line-two .circle {
+  width: 15px;
+  height: 15px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  position: absolute;
+  top: -6px;
+  left: 80px;
+}
+
+/****** Content End ******/
